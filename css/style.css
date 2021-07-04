@@ -1,0 +1,169 @@
+/* Format all */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* xFormat all */
+
+/* Bagian Header */
+.logo{
+    padding: 15px;
+    width: 38vh;
+    float: left;
+}
+header{
+    width: 90%;
+    height: 11.5vh;
+    margin: auto;
+    /* background-color: white; */
+}
+header ul{
+    color:rgb(0, 94, 255);
+    float: right;
+    margin: auto;
+}
+header li{
+    display: inline-block;
+}
+header ul li{
+    padding: 38.35px 15px;
+}
+header ul li:hover{
+    font-style: oblique;
+    color: mediumblue;
+    transition: 1s all;
+}
+
+/* Active */
+.active{
+    background-color: royalblue;
+    color: white;
+}
+/* xActive */
+
+/* Fixed header */
+/* .fixed{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: all 0.3s ease-out;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 99;
+}
+.scroll{
+    top: -90px;
+}
+.no-scroll{
+    top: 0;
+    z-index: 99;
+} */
+/* xFixed Header */
+
+/* xBagian Header */
+
+/* Banner */
+.banner{
+    height: 100vh;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.banner::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 94, 255, 0.5);
+    z-index: -1;
+}
+.banner h2{
+    font-size: 18ex;
+    text-align: center;
+    font-family: 'Yatra One', cursive;
+    color: lavender;
+    z-index: 1;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.592);
+}
+.banner h3{
+    font-size: 15ex;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 217, 26);
+    z-index: 1;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.592);
+}
+/* xBanner */
+
+/* content */
+.vimi{
+    height: 100vh;
+    background-color: teal;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.vimi h3{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+}
+/* xContent */
+.struktur{
+    height: 100vh;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.struktur h3{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+    color: dimgray;
+}
+.contact{
+    height: 90vh;
+    background-color:rgb(35, 35, 35);
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.contact h3{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+}
+footer{
+    height: 10vh;
+    background-color:rgb(35, 35, 35);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+footer h5{
+    padding: 30px;
+}
+/* mode smartphone */
