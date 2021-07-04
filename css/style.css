@@ -39,17 +39,62 @@ header ul li:hover{
     color: mediumblue;
     transition: 1s all;
 }
+/* sidebar */
 .mobile img{
     display: none;
     width: 30px;
     float: right;
     padding: 30px;
 }
+.sidebar{
+    text-align: center;
+    position: fixed;
+    top: 0;
+    right: -500px;
+    bottom: auto;
+    width: 30vh;
+    /* background-color: white; */
+    z-index: 999;
+}
+.sidebar ul{
+    margin-top: 5px;
+}
+.sidebar ul li{
+    display: block;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    color: rgb(0, 94, 255);
+    background-color: white;
+    border: 5px solid rgb(0, 94, 255);
+    border-radius: 50px;
+    font-size: 20px;
+}
+.close img{
+    width: 30px;
+    padding-left: 150px;
+    padding-top: 3px;
+    background-color: white;
+    border: 5px solid white;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .sidebar{
+    right: 0;
+    transition: 1s;
+}
+#check ~ .sidebar{
+    transition: 1s;
+}
+/* xsidebar */
 
 /* Active */
 .active{
     background-color: royalblue;
     color: white;
+}
+.active2{
+    font-weight: bold;
 }
 /* xActive */
 
@@ -176,8 +221,16 @@ footer h5{
 }
 /* mode smartphone */
 @media (max-width : 1200px){
+    header{
+        width: 100%;
+        height: 11vh;
+        background-color: white;
+    }
     header ul li{
         display: none;
+    }
+    .logo{
+        padding-top: 14px;
     }
     .mobile img{
         display: block;
@@ -187,6 +240,22 @@ footer h5{
     }
     .banner h3{
         font-size: 10ex;
+    }.fixed{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        transition: all 0.3s ease-out;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        z-index: 999;
+    }
+    .scroll{
+        top: -90px;
+    }
+    .no-scroll{
+        top: 0px;
+        z-index: 999;
     }
 }
 @media (max-width : 800px){
@@ -194,14 +263,12 @@ footer h5{
         display: none;
     }
     header{
+        width: 100%;
         height: 11vh;
+        background-color: white;
     }
     .mobile img{
         display: block;
-        padding: 20px;
-    }
-    .logo{
-        padding: 10px;
     }
     .banner h2{
         font-size: 7ex;
@@ -212,5 +279,22 @@ footer h5{
     footer h5{
         font-size: 10px
 
+    }
+    .fixed{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        transition: all 0.3s ease-out;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        z-index: 999;
+    }
+    .scroll{
+        top: -90px;
+    }
+    .no-scroll{
+        top: 0px;
+        z-index: 999;
     }
 }
