@@ -69,7 +69,6 @@ header ul li:hover {
     right: -500px;
     bottom: auto;
     width: 30vh;
-    /* background-color: white; */
     z-index: 998;
 }
 
@@ -202,7 +201,7 @@ header ul li:hover {
     height: 100vh;
     width: 70%;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 30px;
     color: dimgray;
     /* display: flex; */
     text-align: center;
