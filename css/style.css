@@ -172,7 +172,7 @@ header ul li:hover {
     font-size: 18ex;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 217, 26);
+    color: rgb(255, 114, 26);
     z-index: 1;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.592);
 }
@@ -183,7 +183,7 @@ header ul li:hover {
 
 .vimi {
     height: 100vh;
-    background-color: teal;
+    background-color: rgb(255, 114, 26);
     color: white;
     display: flex;
     text-align: center;
@@ -311,21 +311,85 @@ header ul li:hover {
     height: 90vh;
     background-color: rgb(35, 35, 35);
     color: white;
-    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding-top: 5px;
 }
 
-.contact h3 {
+.contact h2 {
     width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin: auto;
     text-align: center;
-    padding: 40px;
+    color: rgb(255, 162, 0);
+    text-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.705);
+    border-style: outset;
+    border-radius: 100px;
+}
+.kolombawah{
+    display: flex;
+    margin: auto;
+    justify-content: center;
 }
 
+.lokasi h4{
+    padding: 20px;
+    border-style: outset;
+    background-color: royalblue;
+}
+.lokasi p{
+    padding: 10px;
+}
+.kontak h4{
+    padding: 20px;
+    border-style: outset;
+    background-color: chartreuse;
+}
+.kontak p{
+    padding: 10px;
+}
+.alamat h4{
+    padding: 20px;
+    border-style: outset;
+    background-color: tomato;
+}
+.alamat p{
+    padding: 10px;
+}
+.jarak{
+    width: 15%;
+}
+iframe{
+    width: 78%;
+    height: 300px;
+    padding: 30px;
+}
+.sosmed{
+    background-color: rgb(35, 35, 35);
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+}
+.sosmed i{
+    padding: 15px;
+    font-size: 25px;
+}
+.sosmed i:hover{
+    font-weight: bold;
+    color: rgb(35, 35, 35);
+}
+.fa-phone{background-color: blue; border-radius: 100px;}
+.fa-whatsapp{background-color: green; border-radius: 100px;}
+.fa-facebook-f{background-color: blue; border-radius: 100px;}
+.fa-instagram{background-color: deeppink; border-radius: 100px;}
+.fa-youtube{background-color: red; border-radius: 100px;}
+.fa-envelope{background-color: gold; border-radius: 100px;}
+
 footer {
-    height: 10vh;
+    height: 5vh;
     background-color: rgb(35, 35, 35);
     color: white;
     text-align: center;
@@ -334,7 +398,7 @@ footer {
 }
 
 footer h5 {
-    padding: 30px;
+    padding: 10px;
 }
 
 /* mode smartphone */
@@ -342,6 +406,14 @@ footer h5 {
 @media (max-width: 1310px) {
     .struktur img{
         width: 200px;
+    }
+}
+@media (max-width: 1150px) {
+    .jarak{
+        width: 5%;
+    }
+    .contact h2{
+        width: 98%;
     }
 }
 
@@ -524,6 +596,12 @@ footer h5 {
     .menteri p {
         text-align: center;
     }
+    .sosmed{
+        padding-bottom: 25px;
+    }
+    .sosmed i{
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -552,6 +630,23 @@ footer h5 {
     }
 }
 
+@media (max-width: 620px){
+    iframe{
+        width: 78%;
+        height: 250px;
+        padding: 30px;
+    }
+    .sosmed i{
+        font-size: 8px;
+    }
+}
+@media (max-width: 450px){
+    iframe{
+        width: 78%;
+        height: 190px;
+        padding: 30px;
+    }
+}
 @media (max-width: 345px) {
     .struktur {
         height: 180vh;
