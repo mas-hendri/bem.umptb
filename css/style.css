@@ -23,10 +23,12 @@ a {
 }
 
 header {
-    width: 90%;
+    width: 100%;
     height: 11.5vh;
     margin: auto;
     padding-top: 1px;
+    padding-left: 50px;
+    background-color: white;
 }
 
 header ul {
@@ -34,6 +36,7 @@ header ul {
     float: right;
     margin: auto;
     font-weight: bold;
+    padding-right: 120px;
 }
 
 header li {
@@ -46,6 +49,8 @@ header ul li {
 
 header ul li:hover {
     color: orange;
+    text-decoration: underline;
+    color: mediumblue;
     transition: 1s all;
 }
 
@@ -125,35 +130,12 @@ header ul li:hover {
 
 /* xActive */
 
-/* Fixed header */
-
-/* .fixed{
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    transition: all 0.3s ease-out;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    z-index: 99;
-}
-.scroll{
-    top: -90px;
-}
-.no-scroll{
-    top: 0;
-    z-index: 99;
-} */
-
-/* xFixed Header */
-
 /* xBagian Header */
 
 /* Banner */
 
 .banner {
     height: 100vh;
-    margin-top: 1.2px;
     background-image: url('../img/banner.jpg');
     background-size: cover;
     position: relative;
@@ -339,37 +321,46 @@ footer h5 {
     }
     .sidebar ul li {
         font-size: 15px;
-    }
-    .banner h2 {
-        font-size: 10ex;
-    }
-    .banner h3 {
-        font-size: 10ex;
-    }
-    .fixed {
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        transition: all 0.3s ease-out;
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        z-index: 999;
-    }
-    .scroll {
-        top: -90px;
-    }
-    .no-scroll {
-        top: 0px;
-        z-index: 999;
-    }
-    .struktur {
-        width: 80%;
-    }
-    .struktur img {
-        display: none;
+        width: 40px;
     }
 }
+
+.banner h2 {
+    font-size: 10ex;
+}
+
+.banner h3 {
+    font-size: 10ex;
+}
+
+.fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: all 0.3s ease-out;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 999;
+}
+
+.scroll {
+    top: -90px;
+}
+
+.no-scroll {
+    top: 0px;
+    z-index: 999;
+}
+
+.struktur {
+    width: 80%;
+}
+
+.struktur img {
+    display: none;
+}
+
 
 @media (max-width: 800px) {
     .logo {
@@ -388,7 +379,7 @@ footer h5 {
         display: block;
         width: 25px;
     }
-    .sidebar{
+    .sidebar {
         width: 20vh;
     }
     .banner h2 {
@@ -514,5 +505,28 @@ footer h5 {
     }
     .sidebar ul li {
         font-size: 12px;
+    }
+    .struktur h2 {
+        font-size: 20px;
+    }
+    .dirjen {
+        display: block;
+        float: none;
+    }
+    .menteri {
+        display: block;
+        float: none;
+    }
+    .dirjen p {
+        text-align: center;
+    }
+    .menteri p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 345px) {
+    .struktur {
+        height: 155vh;
     }
 }
